@@ -1,5 +1,6 @@
 ---
 description: Cross-agent context handoff, deterministic AST code skeletonization, and lossless MCP symbol rehydration using Vicem
+globs: .vicem/**, **/AGENTS.md, **/CLAUDE.md
 alwaysApply: false
 ---
 
