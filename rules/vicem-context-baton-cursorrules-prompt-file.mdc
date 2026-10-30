@@ -21,6 +21,7 @@ Use this rule when handing off active coding sessions across AI agents (Cursor, 
    - **Never write skeleton placeholders (`{ /* ... */ }`, `pass`, or `‹REDACTED›`) into source files on disk.**
 
 3. **Handing Off or Compacting the Session**
-   - Run `npx -y vicem-cli codex` (or `claude`, `cursor`, `gemini`, `windsurf`) to pack `.vicem/BATON.md` and hand off to the target agent.
-   - Run `npx -y vicem-cli gui` to review the handoff interactively before delivery.
-   - Run `npx -y vicem-cli self` to compact a bloated session in place without losing architectural context.
+   - Only run these commands after the user explicitly requests the handoff or compaction and confirms a reviewed `vicem-cli` version.
+   - Run `npx -y vicem-cli@<reviewed-version> codex` (or `claude`, `cursor`, `gemini`, `windsurf`) to pack `.vicem/BATON.md` and hand off to the target agent.
+   - Run `npx -y vicem-cli@<reviewed-version> gui` to review the handoff interactively before delivery.
+   - Run `npx -y vicem-cli@<reviewed-version> self` to compact a bloated session in place without losing architectural context.
